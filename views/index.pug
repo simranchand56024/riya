@@ -1,0 +1,43 @@
+doctype html 
+html
+  head 
+    style 
+      include ../static/style.css 
+  body 
+    nav#navbar.top 
+        ul
+            #logo 
+                img(src="/static/logo.png")
+            li #[a(href="/") HOME]
+            li #[a(href="/") ABOUT] 
+            li #[a(href="/") SERVICES] 
+            li #[a(href="/") CLASS INFO] 
+            li #[a(href="/") CONTACT US] 
+
+    section#introSection 
+        div Welcomes to Riya Beauty Parlour
+        div.small Don't forget to pamper yourself
+
+    section#missionSection 
+        h2 Our mission                                          
+        div.card 
+            h3 “To enhance the inner beauty and confidence in our clients by using state-of-art practices and superior quality products.”
+        div.card 
+            h3 "to provide phenomenal beauty services in a relaxing and welcoming environment that leaves our clients feeling pampered and confident."
+        div.card 
+            h3 "InspireWe believe in the power of beauty and self-care to help people feel good, build confidence, find their community, and simply enjoy a few minutes to themselves."        
+    
+    section#sponsorsSection 
+        h2 Our Sponsors 
+        div#sponsors 
+            img(src="/static/logo1.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/logo2.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/logo3.webp", alt="Sponsor Image", class="spImage")
+            img(src="/static/logo4.webp", alt="Sponsor Image", class="spImage")
+
+    
+    footer#footer 
+        | Copyright © 2023 RiyaBeautyParlour.com All rights reserved                          
+    script  
+      include ../static/index.js    
+    
